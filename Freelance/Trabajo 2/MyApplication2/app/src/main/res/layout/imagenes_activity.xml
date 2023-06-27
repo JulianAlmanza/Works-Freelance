@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Regresar1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:onClick="Regresar1"
+                android:contentDescription="Regresar"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Regresar"
+                android:gravity="center"
+                android:textColor="@color/teal_700"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:text="IMAGENES ANIMALES"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <GridView
+            android:id="@+id/gv_imagenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="150dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Animal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:translationY="140dp" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:translationY="140dp"
+            app:srcCompat="@drawable/flecha"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
